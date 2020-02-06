@@ -11,6 +11,9 @@ class Bowling
             echo "Invalid input, try again" . PHP_EOL;
             self::createGame();
         }
+
+        $players = explode(',', $players);
+        print_r($players);
     }
 
 }
