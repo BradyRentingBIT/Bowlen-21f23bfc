@@ -13,7 +13,7 @@ class Bowling
         }
 
         $players = explode(',', $players);
-        print_r($players);
+        print_r($players); // Debug purposes
     }
 
 }
