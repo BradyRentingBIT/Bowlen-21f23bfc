@@ -1,17 +1,19 @@
 <?php
 
+namespace bowling\ScoreBoard;
+
 class ScoreBoard {
 
-	private $players = [];
+    private array $players = [];
 
 	public function addPlayer($player)
     {
-		// TODO
+		$this->players = [$player];
 	} 
 
 	public function getCurrentPlayer()
     {
-		// TODO
+		return $this->players;
 	}
 
 	public function registerPinsDown($pins)

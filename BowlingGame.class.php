@@ -1,17 +1,24 @@
 <?php
 
+namespace bowling\BowlingGame;
+
+require_once ('ScoreBoard.class.php');
+use bowling\ScoreBoard\ScoreBoard;
+
 class BowlingGame
 {
 
-	private $scoreBoard;
+    private ScoreBoard $scoreBoard;
 
-	function __construct()
+	function __construct($players)
     {
-		// TODO
+        $this->scoreBoard = new ScoreBoard();
+		$this->start($players);
 	}
 
-	public function start()
+	public function start($players)
     {
-		// TODO
+        // We add our players here
+       $this->scoreBoard->addPlayer($players);
 	}
 }
